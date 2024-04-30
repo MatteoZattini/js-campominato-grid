@@ -57,16 +57,25 @@ select.addEventListener("change", function(){
 myButton.addEventListener("click", function(){
     triggerChange(select);
     if (select.value == "easy") {
+        griglia.innerHTML = "";
+        grigliaMedium.innerHTML = "";
+        grigliaHard.innerHTML = "";
         for (let i = 1; i <= 100; i++) {
             let quadrato = mySquare(i);
             griglia.append(quadrato);   
         }
     } else if (select.value == "medium") {
+        griglia.innerHTML = "";
+        grigliaMedium.innerHTML = "";
+        grigliaHard.innerHTML = "";
         for (let i = 1; i <= 81; i++) {
             let quadrato = mySquare(i);
             grigliaMedium.append(quadrato);   
         }
     } else if (select.value == "hard") {
+        griglia.innerHTML = "";
+        grigliaMedium.innerHTML = "";
+        grigliaHard.innerHTML = "";
         for (let i = 1; i <= 49; i++) {
             let quadrato = mySquare(i);
             grigliaHard.append(quadrato);   
