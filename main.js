@@ -9,18 +9,13 @@ for (let i = 1; i <= 100; i++) {
     // griglia.append(square);
 
     // chiamo la funzione
-    let elemento = mySquare(i);
+    let quadrato = mySquare(i);
 
     // creo un event listener che aggiunga sia il numero che un bg color allo
     // square selezionato
-    elemento.addEventListener("click", function(){
-        
-        elemento.innerText = i;
-        elemento.classList.toggle("evidenziata")
+   
 
-    })
-
-    griglia.append(elemento);
+    griglia.append(quadrato);
 
 }
 
@@ -28,5 +23,13 @@ for (let i = 1; i <= 100; i++) {
 function mySquare (contenuto) {
     let square = document.createElement("div");
     square.classList.add("square");
+
+    square.addEventListener("click", function(){
+        
+        square.innerText = contenuto;
+        square.classList.toggle("evidenziata")
+
+    })
+
     return square;
 }
