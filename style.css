@@ -27,3 +27,14 @@ body {
 .evidenziata {
 	background: cyan;
 }
+
+button {
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
