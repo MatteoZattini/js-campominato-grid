@@ -8,4 +8,12 @@ for (let i = 1; i <= 100; i++) {
     square.classList.add("square");
     griglia.append(square);
 
+    // creo un event listener che aggiunga sia il numero che un bg color allo
+    // square selezionato
+    square.addEventListener("click", function(){
+        
+        square.innerText = i;
+        square.classList.toggle("evidenziata")
+
+    })
 }
