@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #222;
+	color: white;
+	font-family: sans-serif;
+}
+
+#grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 800px;
+}
+
+.square {
+	width: 80px;
+	height: 80px;
+	border: solid 1px red;
+}
+
+.evidenziata {
+	background: red;
+}
