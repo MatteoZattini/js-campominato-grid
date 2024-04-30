@@ -15,7 +15,20 @@ body {
 	flex-wrap: wrap;
 	margin: 0 auto;
 	width: 800px;
-    margin-top: 5rem;
+}
+
+#gridmedium {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 720px;
+}
+
+#gridhard {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 560px;
 }
 
 .square {
@@ -33,8 +46,14 @@ button {
     padding: 1rem;
 }
 
+select {
+    margin-top: 3rem;
+    height: auto;
+}
+
 .container {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 5rem;
 }
